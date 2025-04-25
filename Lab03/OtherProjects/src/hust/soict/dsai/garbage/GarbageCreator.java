@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class GarbageCreator {
     public static void main(String[] args) {
-        String filename = "ggg.txt"; // Đảm bảo bạn có tệp test.exe hoặc thay bằng đường dẫn file lớn bất kỳ
+        String filename = "ggg.txt"; 
         byte[] inputBytes;
 
         try {
