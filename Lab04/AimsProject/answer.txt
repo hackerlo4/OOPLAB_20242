@@ -1,0 +1,24 @@
+Make comparisons:
+- Compare the top-level containers in Swing and AWT 
+- Compare the class name of components in AWT and the corresponding class’s name in Swing 
+- Compare the event-handling of Swing and AWT applications 
+The resulting appearances of the applications developed using Swing and AWT might be different as well. 
+
+
+Trả lời: 
+
+a. Compare the top-level containers in Swing and AWT 
+- AWT: sử dụng các container như là Frame, Dialog, Window, phụ thuộc vào các thành phần giao diện của hệ điều hành
+- Swing: sử dụng các JFrame, JDialog, JWindow, không liên quan đến hđh, được vẽ bằng java -> giao diện nhất quán hơn trên các nền tảng khác nhau
+
+b. Compare the class name of components in AWT and the corresponding class’s name in Swing 
+- AWT: Các component không có tiền tố: button, label, textfield, v.v.
+- Swing: các components có thêm chữ J đằng trước: JButton, JLabel, JTextField, v.v. và có thêm các component nâng cao như JTable, JTree
+
+c. Compare the event-handling of Swing and AWT applications 
+- AWT: sử dụng package java.awt.event
+- Swing: cũng sử dụng awt nhưng hỗ trợ các tương tác phức tạp hơn (ví dụ: ListSelectionEvent cho JList).
+
+Results: Appearance difference:
+- AWT: Giao diện phụ thuộc vào hệ điều hành, không nhất quán giữa các nền tảng khác nhau (window 11, window 7, linux, mac ,v.v.)
+- Swing: hỗ trợ nhiều loại giao diện, dễ dàng tùy biến
