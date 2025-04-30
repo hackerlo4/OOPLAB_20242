@@ -1,7 +1,8 @@
 package hust.soict.hedspi.aims.screen.manager;
 
 import javax.swing.JPanel;
-import hust.soict.hedspi.aims.media.*;
+import hust.soict.hedspi.aims.media.*; 
+
 import java.awt.*;
 import javax.swing.*;
 
