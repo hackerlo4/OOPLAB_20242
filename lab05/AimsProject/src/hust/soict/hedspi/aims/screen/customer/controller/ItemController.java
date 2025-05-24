@@ -19,6 +19,9 @@ public class ItemController {
 	private Media media;
 	private Cart cart;
 	private Store store;
+	public ItemController(Cart cart) {
+		this.cart = cart;
+	}
 	
     @FXML
     private Button btnAddToCart;
@@ -51,18 +54,14 @@ public class ItemController {
         } 
     }
     
-    public ItemController(Cart cart) {
-		this.cart = cart;
-	}
-    
     public void setData(Media media) {
 		this.media = media;
 		lblTitle.setText(media.getTitle());
 		lblCost.setText(media.getCost() + " $");
-		
 		if (media instanceof Playable) {
 			btnPlay.setVisible(true);
-		} else {
+		}
+		else {
 			btnPlay.setVisible(false);
 			HBox.setMargin(btnAddToCart, new Insets(0, 0, 0, 70));
 		}
