@@ -1,0 +1,3 @@
+The Aims class must be updated to handle any exceptions generated when the play() methods are called. What happens when you don’t update for them to catch? 
+
+Khi đó chương trình nếu gặp lỗi sẽ dừng đột ngột, người dùng khó có thể biết lỗi ở đâu. Nếu có thêm try catch thì người dùng sẽ biết lỗi ở đâu và thông tin cụ thể thế nào để sửa, đồng thời chương trình cũng sẽ bỏ qua lỗi để hoạt động tiếp
