@@ -33,16 +33,16 @@ public class CartController {
 		this.store = store;
 	}
 	
-	@FXML
-	private Label lblTotalCost;
+    @FXML
+    private Label lblTotalCost;
 	
-	@FXML
+    @FXML
     private TextField tfFilter;
 	
-	@FXML
+    @FXML
     private RadioButton radioBtnFilterId;
 	
-	@FXML
+    @FXML
     private RadioButton radioBtnFilterTitle;
 
     @FXML
@@ -78,10 +78,10 @@ public class CartController {
 			} catch (PlayerException e) {
 				new Alert(Alert.AlertType.ERROR, "Error playing media: " + e.getMessage()).showAndWait();
 			}
-		} else {
+		} 
+	else {
 			new Alert(Alert.AlertType.WARNING, "Selected media is not playable.").showAndWait();
 		}
-    	
     }
 
     @FXML
@@ -145,14 +145,9 @@ public class CartController {
         
         // Update total cost label
     	lblTotalCost.setText(String.format("%.2f $", cart.totalCost()));
-        
         cart.getItemsOrdered().addListener((ListChangeListener<Media>) change -> {
             while (change.next()) {
-                if (change.wasAdded() || change.wasRemoved()) {
-                	// update total cost
-                	lblTotalCost.setText(String.format("%.2f $", cart.totalCost()));
-                }
-            }
+                if (change.wasAdded() || change.wasRemoved()) {lblTotalCost.setText(String.format("%.2f $", cart.totalCost())); } }
         });
     }
     
